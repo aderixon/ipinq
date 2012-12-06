@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id$ -->
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/" xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+<ShortName>Internal IPs</ShortName>
+<Description>Search internal IP Addresses</Description>
+<InputEncoding>UTF-8</InputEncoding>
+<Image width="16" height="16" type="image/x-icon">http://intranet/favicon.ico</Image>
+<Url type="text/html" method="GET" template="http://intranet/ipinq/grep">
+  <Param name="string" value="{searchTerms}"/>
+  <Param name="comments" value="on"/>
+</Url>
+<Url type="application/opensearchdescription+xml"
+  rel="self"
+  template="http://intranet/ipinq/ipinqsearch.xml" />
+<moz:SearchForm>http://intranet/ipinq/</moz:SearchForm>
+</OpenSearchDescription>

@@ -1,0 +1,15 @@
+<form class="form-horizontal" method="get" action="grep">
+  <fieldset>
+    <div class="control-group">
+      <label class="control-label" for="string">Look for: </label>
+      <div class="controls">
+        <input class="span3" id="string" name="string" size="30" type="text" value="<%= @string %>" />
+        <input class="btn btn-primary" value="Find" type="submit">&nbsp;<button type="reset" class="btn" />Reset</button>
+      </div>
+      <div class="controls">
+        <label class="checkbox">
+          <input type="checkbox" id="comments" name="comments" checked /> Enable comments
+        </label>
+      </div>
+  </fieldset>
+</form>
